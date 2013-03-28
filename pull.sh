@@ -9,7 +9,7 @@ echo -e "Pulling for $WORKSPACE"
 
 for dir in $(find . -maxdepth 1 -type d); do
 	#Add excludes for folders here, e.g.
-	#if [[ "$d" == *foldername* ]]; ..
+	#if [[ "$dir" == *foldername* ]]; ..
 	#to either skip or visit certain folders	
 	cd $dir
 	if [ -d .git ]; then
