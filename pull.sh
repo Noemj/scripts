@@ -22,6 +22,7 @@ for dir in $(find . -maxdepth 1 -type d); do
 		#if [ "$R" != "Already up-to-date." ]; then
 			#echo $R
 		#fi
+		echo
 	fi
 	cd $WORKSPACE
 done
