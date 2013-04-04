@@ -14,7 +14,7 @@ for dir in $(find . -maxdepth 1 -type d); do
 	cd $dir
 	if [ -d .git ]; then
 		echo $dir | cut -d'/' -f 2
-		git pull		
+		git pull origin $(git branch | sed -n -e 's/^\* \(.*\)/\1/p')	
 		#To print origin uncomment the following line
 		#git remote -v
 		#To exclude up-to-date messages uncomment the following lines
