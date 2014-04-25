@@ -2,7 +2,7 @@
 #Iterates your workspace folders and calls git pull on each git project
 
 #Replace with your workspace path
-WORKSPACE="/c/workspace/workspace_git/"
+WORKSPACE="Path"
 
 cd $WORKSPACE
 echo -e "Pulling for $WORKSPACE"
